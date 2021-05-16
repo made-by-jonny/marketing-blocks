@@ -10,6 +10,9 @@ import Image from "../components/primatives/image";
 import LeadHeading from "../components/primatives/headings/lead";
 import Mast from "../components/mast";
 import Card from "../components/cards/card";
+import Column from "../components/column";
+import Avatar from "../components/avatar";
+import Detail from "../components/detail";
 
 const Index = () => {
   return (
@@ -82,7 +85,7 @@ const Index = () => {
             ))}
           </Grid>
         </Container>
-        <Container className="full" max="1fr">
+        <Container max="1fr">
           <Content className="centered contained">
             <LeadHeading>Some text</LeadHeading>
             <h2>This is some example text</h2>
@@ -233,6 +236,59 @@ const Index = () => {
               </li>
             ))}
           </Grid>
+        </Container>
+        <Container max="1fr">
+          <Content className="centered">
+            <h2>Latest news</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <Grid max="repeat(2, 1fr)">
+              {[...new Array(4)].map((item) => (
+                <Card>
+                  <img
+                    width="100%"
+                    height="auto"
+                    style={{
+                      background: "#EFF2F6",
+                      minHeight: "200px",
+                      border: "0",
+                    }}
+                  />
+                  <Content style={{ padding: "1rem" }}>
+                    <h3>This is a title of a blog</h3>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus, error similique! Delectus inventore ratione
+                      dolorum tenetur porro praesentium nulla sit alias, labore
+                      repudiandae omnis qui recusandae, illum sapiente unde
+                      sunt.
+                    </p>
+                    <Container
+                      className="no-margin"
+                      max="2fr 1fr"
+                      min="2fr 1fr"
+                    >
+                      <Row>
+                        <Avatar />
+                        <Column>
+                          <strong>Anthony Totton</strong>
+                          <Detail>4 days ago</Detail>
+                        </Column>
+                      </Row>
+                      <Row justify="flex-end">
+                        <Detail>
+                          <i className="fa fa-heart" aria-hidden="true"></i> 120
+                        </Detail>
+                        <Detail>
+                          <i className="fa fa-comment" aria-hidden="true"></i>{" "}
+                          63
+                        </Detail>
+                      </Row>
+                    </Container>
+                  </Content>
+                </Card>
+              ))}
+            </Grid>
+          </Content>
         </Container>
       </PageContainer>
     </>

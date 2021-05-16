@@ -73,7 +73,7 @@ const GlobalStyle = createGlobalStyle`
 
   .no-margin {
       margin: 0;
-      margin-bottom: 0;
+      margin-bottom: 0 !important;
   }
 
   .with-padding {
