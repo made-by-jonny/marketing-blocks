@@ -38,11 +38,25 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     font-size:2rem;
   }
-  p {
+  p,ul,li {
     line-height: 150%;
     margin: 0 0 1rem 0;
     color: #454A67;
     font-size: 1.2rem;
+  }
+
+  a {
+      font-weight:bold;
+      color: #111;
+  }
+
+  ul {
+      list-style:none;
+      padding: 0;
+      maring: 0;
+      i {
+          margin-right: 0.5rem;
+      }
   }
 
   .centered {
@@ -60,6 +74,14 @@ const GlobalStyle = createGlobalStyle`
   .no-margin {
       margin: 0;
       margin-bottom: 0;
+  }
+
+  .with-padding {
+      padding: 1rem 0;
+  }
+
+  .large {
+      font-size: 4rem;
   }
 `;
 

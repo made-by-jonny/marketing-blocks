@@ -9,6 +9,7 @@ import Icon from "../components/icon";
 import Image from "../components/primatives/image";
 import LeadHeading from "../components/primatives/headings/lead";
 import Mast from "../components/mast";
+import Card from "../components/cards/card";
 
 const Index = () => {
   return (
@@ -84,7 +85,7 @@ const Index = () => {
         <Container className="full" max="1fr">
           <Content className="centered contained">
             <LeadHeading>Some text</LeadHeading>
-            <h1>This is some example text</h1>
+            <h2>This is some example text</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
               voluptatibus nisi atque hic pariatur, optio necessitatibus dicta,
@@ -96,6 +97,119 @@ const Index = () => {
                 <Button>Test Submit</Button>
               </Row>
             </form>
+          </Content>
+        </Container>
+        <Container className="full" max="1fr">
+          <Content className="centered">
+            <h2>Pricing</h2>
+            <p>Find what plan is best for you</p>
+            <Grid max="repeat(3, 1fr)">
+              <Card as="li">
+                <Content style={{ padding: "1rem", textAlign: "left" }}>
+                  <LeadHeading>Starter</LeadHeading>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Maxime voluptatibus nisi atque hic pariatur,
+                  </p>
+                  <ul>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 1
+                    </li>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 2
+                    </li>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 3
+                    </li>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 4
+                    </li>
+                  </ul>
+                  <div className="with-padding">
+                    <span className="large">£20</span>
+                    <span>/ Per Month</span>
+                  </div>
+                  <Button>Choose Plan</Button>
+                  <Content className="centered with-padding">
+                    <a href="">Learn more</a>
+                  </Content>
+                </Content>
+              </Card>
+              <Card as="li">
+                <Content style={{ padding: "1rem", textAlign: "left" }}>
+                  <LeadHeading>Starter</LeadHeading>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Maxime voluptatibus nisi atque hic pariatur,
+                  </p>
+                  <ul>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 1
+                    </li>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 2
+                    </li>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 3
+                    </li>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 4
+                    </li>
+                  </ul>
+                  <div className="with-padding">
+                    <span className="large">£20</span>
+                    <span>/ Per Month</span>
+                  </div>
+                  <Button>Choose Plan</Button>
+                  <Content className="centered with-padding">
+                    <a href="">Learn more</a>
+                  </Content>
+                </Content>
+              </Card>
+              <Card as="li">
+                <Content style={{ padding: "1rem", textAlign: "left" }}>
+                  <LeadHeading>Starter</LeadHeading>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Maxime voluptatibus nisi atque hic pariatur,
+                  </p>
+                  <ul>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 1
+                    </li>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 2
+                    </li>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 3
+                    </li>
+                    <li>
+                      <i className="fa fa-check" aria-hidden="true"></i>check
+                      feature 4
+                    </li>
+                  </ul>
+                  <div className="with-padding">
+                    <span className="large">£20</span>
+                    <span>/ Per Month</span>
+                  </div>
+                  <Button>Choose Plan</Button>
+                  <Content className="centered with-padding">
+                    <a href="">Learn more</a>
+                  </Content>
+                </Content>
+              </Card>
+            </Grid>
           </Content>
         </Container>
         <Container>
