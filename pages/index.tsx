@@ -18,9 +18,9 @@ const Index = () => {
         <Row as="nav" style={{ alignItems: "center" }}>
           <Grid max="repeat(5, 1fr)" style={{ textAlign: "center" }}>
             <li>About</li>
+            <li>Features</li>
             <li>Work</li>
             <li>Pricing</li>
-            <li>Testimonials</li>
             <li>Contact</li>
           </Grid>
           <Button>Sign up</Button>
