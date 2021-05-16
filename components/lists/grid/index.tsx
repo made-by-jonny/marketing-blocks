@@ -1,9 +1,13 @@
 import styled from "styled-components";
-
+import React from "react";
 //add to vars
 // break point
 // specific columns
-const Grid: React.FC<{ min?: string; max?: string }> = styled.ul`
+const Grid: React.FC<{
+  min?: string;
+  max?: string;
+  style?: object;
+}> = styled.ul`
   all: unset;
   margin: 1rem 0;
   list-style: none;

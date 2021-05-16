@@ -11,7 +11,7 @@ interface Button {
 const Wrapper = styled.button`
   all: unset;
   display: flex;
-  max-width: 200px;
+  max-width: max-content;
   height: 48px;
   border-radius: 0.5rem;
   min-height: 48px;
