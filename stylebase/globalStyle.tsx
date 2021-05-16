@@ -49,6 +49,18 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     text-align: center;
   }
+
+  .contained {
+      @media(min-width:600px) {
+        max-width: 60%;
+        margin: 0 auto;
+      }
+  }
+
+  .no-margin {
+      margin: 0;
+      margin-bottom: 0;
+  }
 `;
 
 export default GlobalStyle;

@@ -7,6 +7,7 @@ import Grid from "../components/lists/grid";
 import Row from "../components/row";
 import Icon from "../components/icon";
 import Image from "../components/primatives/image";
+import LeadHeading from "../components/primatives/headings/lead";
 
 const Index = () => {
   return (
@@ -39,7 +40,12 @@ const Index = () => {
           {[...new Array(4)].map((item) => (
             <li>
               <Content>
-                <Container max="80px 3fr" min="80px 3fr">
+                <Container
+                  max="80px 3fr"
+                  min="80px 3fr"
+                  as="section"
+                  className="no-margin"
+                >
                   <Icon>
                     <i className="fa fa-home" aria-hidden="true" />
                   </Icon>
@@ -58,6 +64,23 @@ const Index = () => {
             </li>
           ))}
         </Grid>
+      </Container>
+      <Container className="full" max="1fr">
+        <Content className="centered contained">
+          <LeadHeading>Some text</LeadHeading>
+          <h1>This is some example text</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+            voluptatibus nisi atque hic pariatur, optio necessitatibus dicta,
+            reprehenderit fuga quo aperiam! Eligendi neque necessitatibus at?
+            Repudiandae tenetur tempore dignissimos minus?
+          </p>
+          <form>
+            <Row>
+              <Button>Test Submit</Button>
+            </Row>
+          </form>
+        </Content>
       </Container>
       <Container>
         <h2 className="centered">Some basic features, but centered</h2>

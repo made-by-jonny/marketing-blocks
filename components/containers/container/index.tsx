@@ -5,6 +5,7 @@ import React from "react";
 // specific columns
 const Container: React.FC<{
   className?: string;
+  as?: string;
   min?: string;
   max?: string;
 }> = styled.article`
